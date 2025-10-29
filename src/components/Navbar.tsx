@@ -8,12 +8,13 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
 
-  const handleFAQClick = (e) => {
-    e.preventDefault();
-    document.getElementById("faq")?.scrollIntoView({ behavior: "smooth" });
-  };
+ const handleFAQClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+  e.preventDefault();
+  document.getElementById("faq")?.scrollIntoView({ behavior: "smooth" });
+};
 
-  const isActive = (path) => location.pathname === path;
+  const isActive = (path: string) => location.pathname === path
+
 
   return (
     <nav className="fixed top-0 left-0 w-full border-b bg-background z-50">
