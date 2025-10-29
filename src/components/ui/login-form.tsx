@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import { Field, FieldDescription, FieldGroup, FieldLabel, FieldSeparator } from "@/components/ui/field"
 import { Input } from "@/components/ui/input"
+import { NavLink } from "react-router-dom"
 
 export function LoginForm({ className, ...props }: React.ComponentProps<"form">) {
   const handleGoogleLogin = () => {
@@ -92,9 +93,7 @@ export function LoginForm({ className, ...props }: React.ComponentProps<"form">)
           </div>
           <FieldDescription className="text-center">
             Don&apos;t have an account?{" "}
-            <a href="/signup" className="underline underline-offset-4">
-              Sign up
-            </a>
+           <NavLink to='/signup' className='underline underline-offset-4'>Sign Up</NavLink>
           </FieldDescription>
         </Field>
       </FieldGroup>

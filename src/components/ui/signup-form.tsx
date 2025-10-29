@@ -3,6 +3,7 @@ import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import { Field, FieldDescription, FieldGroup, FieldLabel, FieldSeparator } from "@/components/ui/field"
 import { Input } from "@/components/ui/input"
+import { NavLink } from "react-router-dom"
 
 export function SignupForm({ className, ...props }: React.ComponentProps<"form">) {
   return (
@@ -79,7 +80,7 @@ export function SignupForm({ className, ...props }: React.ComponentProps<"form">
         </Field>
         <Field>
           <FieldDescription className="px-6 text-center">
-            Already have an account? <a href="/login">Login</a>
+            Already have an account? <NavLink to='/login'>Login in</NavLink>
           </FieldDescription>
         </Field>
       </FieldGroup>
