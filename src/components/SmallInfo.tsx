@@ -5,12 +5,12 @@ function SmallInfo() {
     <section className="bg-foreground text-background py-12 sm:py-16 mt-10 w-full">
       <div className="max-w-3xl mx-auto px-6 sm:px-8">
         {/* Heading */}
-        <h4 className="text-2xl sm:text-3xl font-blender font-semibold text-center mb-8">
+        <h4 className="text-2xl sm:text-3xl font-serif font-semibold text-center mb-8">
           How it Works
         </h4>
 
         {/* Ordered List */}
-        <ol className=" list-decimal pl-6 sm:pl-10 text-left space-y-5 text-2xl sm:text-lg leading-relaxed text-background/90 font-blender">
+        <ol className=" list-decimal pl-6 sm:pl-10 text-left space-y-5 text-2xl sm:text-lg leading-relaxed text-background/90 font-serif">
           <li>Book mock interviews whenever you like.</li>
           <li>
             Meet with your interviewer — a senior engineer from FAANG and other

@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Avatar } from "@radix-ui/react-avatar";
 import { AvatarImage } from "./ui/avatar";
+import {motion} from 'motion/react'
 
 const CompaniesAndTestimonials = () => {
   const companies = [
@@ -39,9 +40,14 @@ const CompaniesAndTestimonials = () => {
   ];
 
   return (
-    <section className="my-20 flex flex-col items-center text-black">
+    <motion.section 
+     initial={{ opacity: 0, y: 40 }} // start hidden and lower
+      whileInView={{ opacity: 1, y: 0 }} // fade in and move up
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      viewport={{ once: false, amount: 0.2 }}
+    className="my-20 flex flex-col items-center text-black">
       {/* Title */}
-      <h3 className="text-center font-blender text-lg lg:text-2xl">
+      <h3 className="text-center font-serif text-lg lg:text-2xl">
         Our interviewers and mentors have worked at:
       </h3>
 
@@ -79,7 +85,7 @@ const CompaniesAndTestimonials = () => {
 
       {/* Hero Section */}
       <div className="flex flex-col items-center justify-center text-center mt-20 px-6 sm:px-10 md:px-16">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-blender max-w-7xl">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif max-w-7xl">
           Take the guesswork out of prepping for technical interviews.
         </h1>
         <p className="text-lg sm:text-xl md:text-2xl mt-4 text-foreground/90 max-w-2xl">
@@ -87,13 +93,13 @@ const CompaniesAndTestimonials = () => {
         </p>
         <Button
           variant="default"
-          className="flex items-center justify-center gap-3 bg-primary mt-5 lg:mt-8 sm:mt-14 mb-6 sm:mb-8 text-lg sm:text-xl md:text-2xl cursor-pointer text-primary-foreground h-14 sm:h-16 md:h-20 px-8 sm:px-12 font-blender hover:opacity-90"
+          className="flex items-center justify-center gap-3 bg-primary mt-5 lg:mt-8 sm:mt-14 mb-6 sm:mb-8 text-lg sm:text-xl md:text-2xl cursor-pointer text-primary-foreground h-14 sm:h-16 md:h-20 px-8 sm:px-12 font-serif hover:opacity-90"
         >
           <Link to="/login">Give it a try</Link>
         </Button>
       </div>
    
-    </section>
+    </motion.section>
   );
 };
 

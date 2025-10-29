@@ -5,14 +5,19 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-
+import {motion} from 'motion/react'
 function FAQ() {
   return (
-    <section id="faq" className="bg-foreground text-primary-foreground py-16 px-6 sm:px-10 md:px-20 mb-10">
+    <motion.section
+     initial={{ opacity: 0, y: 40 }} // start hidden and lower
+      whileInView={{ opacity: 1, y: 0 }} // fade in and move up
+      transition={{ duration: 1, ease: "easeOut" }}
+      viewport={{ once: true, amount: 0.2 }} 
+     id="faq" className="bg-foreground text-primary-foreground py-16 px-6 sm:px-10 md:px-20 mb-10">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
         {/* Left Side: Title */}
         <div className="flex flex-col justify-center">
-          <h2 className="font-blender text-5xl sm:text-6xl font-semibold leading-tight">
+          <h2 className="font-serif text-5xl sm:text-6xl font-semibold leading-tight">
             Frequently Asked Questions
           </h2>
           <p className="mt-4 text-lg sm:text-xl text-primary-foreground/80">
@@ -34,30 +39,23 @@ function FAQ() {
                 </p>
               </AccordionContent>
             </AccordionItem>
-
-            <AccordionItem value="item-2" className="border-b border-muted">
+          <AccordionItem value="item-2" className="border-b border-muted">
               <AccordionTrigger className="text-lg font-medium">
-                Is there a free trial available?
+                What kind of questions can I expect?
               </AccordionTrigger>
               <AccordionContent className="transition-all duration-300 ease-in-out overflow-hidden data-[state=closed]:max-h-0 data-[state=open]:max-h-40">
                 <p className="text-muted-foreground">
-                  Yes, you can start for free and explore key features before
-                  upgrading to a premium plan.
+                 Our interviews focus on CS fundamentals, data structures, algorithms, and systems design.
+                  Questions will be similar, both in subject matter and difficulty,
+                  to the kinds of questions you’d see in a real technical interview at a top company for a backend or full-stack role.
                 </p>
               </AccordionContent>
             </AccordionItem>
+           
 
-            <AccordionItem value="item-3" className="border-b border-muted">
-              <AccordionTrigger className="text-lg font-medium">
-                Can I cancel anytime?
-              </AccordionTrigger>
-              <AccordionContent className="transition-all duration-300 ease-in-out overflow-hidden data-[state=closed]:max-h-0 data-[state=open]:max-h-40">
-                <p className="text-muted-foreground">
-                  Absolutely. You can manage or cancel your subscription anytime
-                  from your account settings.
-                </p>
-              </AccordionContent>
-            </AccordionItem>
+           
+
+           
 
             <AccordionItem value="item-4" className="border-b border-muted">
               <AccordionTrigger className="text-lg font-medium">
@@ -86,7 +84,7 @@ function FAQ() {
           </Accordion>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
 

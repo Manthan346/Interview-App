@@ -68,22 +68,7 @@ function Contact() {
       </div>
 
       {/* Logos or Trusted Companies */}
-      <div className="mt-16 flex flex-wrap justify-center items-center gap-8 opacity-70">
-        {[
-          "https://cdn.worldvectorlogo.com/logos/notion-logo-1.svg",
-          "https://cdn.worldvectorlogo.com/logos/tesla-9.svg",
-          "https://cdn.worldvectorlogo.com/logos/stripe-4.svg",
-          "https://cdn.worldvectorlogo.com/logos/ghost-7.svg",
-          "https://cdn.worldvectorlogo.com/logos/launchdarkly.svg",
-        ].map((logo, idx) => (
-          <img
-            key={idx}
-            src={logo}
-            alt="Partner logo"
-            className="h-8 w-auto object-contain"
-          />
-        ))}
-      </div>
+     
     </section>
   );
 }
