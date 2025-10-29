@@ -24,7 +24,7 @@ function Navbar() {
           to="/"
           className="text-foreground font-bold font-sans text-xl hover:opacity-90"
         >
-          Company Name
+          mockbuddy.io
         </NavLink>
 
         {/* Desktop Navigation */}
