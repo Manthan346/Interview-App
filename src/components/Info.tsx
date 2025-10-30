@@ -9,7 +9,7 @@ const Info = () => {
     <motion.section
      initial={{ opacity: 0, y: 40 }} // start hidden and lower
       whileInView={{ opacity: 1, y: 0 }} // fade in and move up
-      transition={{ duration: 1, ease: "easeOut" }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
       viewport={{ once: false, amount: 0.2 }}
      className="relative bg-primary text-primary-foreground overflow-hidden py-20  px-6 sm:px-10 lg:px-20">
       <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2 items-center gap-12">
@@ -24,21 +24,7 @@ const Info = () => {
             Interview prep and job hunting are chaos and pain. We can help. Really.
           </p>
 
-          <div className="mt-10 flex flex-col sm:flex-row gap-4">
-            <NavLink to='/login'>
-            <Button
-              variant="secondary"
-              className="flex items-center gap-3 bg-background  cursor-pointer  text-foreground font-serif text-lg sm:text-xl py-6 px-8 "
-            >
-              <img
-                src={google}
-                alt="Google Icon"
-                className="h-6 w-6"
-              />
-              <span>Get started for free</span>
-            </Button>
-            </NavLink>
-          </div>
+         
         </div>
 
         {/* Right Image Section */}
