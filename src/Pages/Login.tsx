@@ -1,5 +1,5 @@
 import { GalleryVerticalEnd } from "lucide-react"
-import img1 from '../assets/img1.svg'
+import practice1 from '../assets/practice1.jpg'
 
 import { LoginForm } from '@/components/ui/login-form'
 
@@ -16,7 +16,7 @@ export default function LoginPage() {
       </div>
       <div className="bg-muted relative hidden lg:block">
         <img
-          src={img1}
+          src={practice1}
           alt="Image"
           className="absolute inset-0 h-full w-full object-cover  dark:grayscale"
         />

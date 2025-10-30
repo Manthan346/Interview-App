@@ -1,17 +1,39 @@
 import { useState } from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 import { Button } from "./ui/button";
 import { Menu } from "lucide-react";
+import { useEffect } from "react";
+
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate()
 
- const handleFAQClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-  e.preventDefault();
-  document.getElementById("faq")?.scrollIntoView({ behavior: "smooth" });
-};
+  const handleFAQClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+
+    if (location.pathname !== "/") {
+      // Navigate to home and set hash in URL
+      navigate("/#faq");
+    } else {
+      // Already on home page, just scroll
+      document.getElementById("faq")?.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  // When route changes to "/#faq", scroll after render
+  useEffect(() => {
+    if (location.hash === "#faq") {
+      const el = document.getElementById("faq");
+      if (el) {
+        setTimeout(() => {
+          el.scrollIntoView({ behavior: "smooth" });
+        }, 300);
+      }
+    }
+  }, [location]);
 
   const isActive = (path: string) => location.pathname === path
 

@@ -10,7 +10,7 @@ function Heading() {
      initial={{ opacity: 0, y: 40 }} // start hidden and lower
       whileInView={{ opacity: 1, y: 0 }} // fade in and move up
       transition={{ duration: 0.8, ease: "easeOut" }}
-      viewport={{ once: true, amount: 0.2 }}
+      viewport={{ once: false, amount: 0.2 }}
     className="mx-auto w-full mt-15 max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
       
       <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl tracking-tight leading-[1.1] text-foreground font-serif text-balance">

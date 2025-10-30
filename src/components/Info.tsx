@@ -11,7 +11,7 @@ const Info = () => {
       whileInView={{ opacity: 1, y: 0 }} // fade in and move up
       transition={{ duration: 1, ease: "easeOut" }}
       viewport={{ once: false, amount: 0.2 }}
-     className="relative bg-primary text-primary-foreground overflow-hidden py-20 px-6 sm:px-10 lg:px-20">
+     className="relative bg-primary text-primary-foreground overflow-hidden py-20  px-6 sm:px-10 lg:px-20">
       <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2 items-center gap-12">
 
         {/* Left Text Section */}
