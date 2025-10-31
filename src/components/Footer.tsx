@@ -20,22 +20,18 @@ const Footer = () => {
           <h3 className="text-xl mb-3 font-semibold">Quick Links</h3>
           <ul className="space-y-2 text-primary-foreground/80">
             <li>
-              <Link to="/" className="hover:text-white transition">
+              <Link to="/" className="hover:text-foreground transition">
                 Home
               </Link>
             </li>
             <li>
-              <a href="#faq" className="hover:text-white transition">
+              <a href="#faq" className="hover:text-foreground transition">
                 FAQs
               </a>
             </li>
+           
             <li>
-              <Link to="/pricing" className="hover:text-white transition">
-                Pricing
-              </Link>
-            </li>
-            <li>
-              <Link to="/contact" className="hover:text-white transition">
+              <Link to="/contact" className="hover:text-foreground transition">
                 Contact
               </Link>
             </li>
@@ -47,24 +43,24 @@ const Footer = () => {
           <h3 className="text-xl mb-3 font-semibold">Connect</h3>
           <ul className="space-y-2 text-primary-foreground/80">
             <li>
-              <Link to="/contact" className="hover:text-white transition">
+              <Link to="/contact" className="hover:text-foreground transition">
                 contact us
               </Link>
             </li>
             <li>
-              <Link to="/terms" className="hover:text-white transition">
+              <Link to="/terms" className="hover:text-foreground transition">
                 Twitter 
               </Link>
             </li>
             <li>
-              <Link to="/privacy" className="hover:text-white transition">
+              <Link to="/privacy" className="hover:text-foreground transition">
                 Linkedin
               </Link>
             </li>
             <li>
               <a
                 href="mailto:support@mockbuddy.io"
-                className="hover:text-white transition"
+                className="hover:text-foreground transition"
               >
                 support@mockbuddy.io
               </a>

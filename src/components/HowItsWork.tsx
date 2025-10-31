@@ -17,7 +17,7 @@ function HowItWorks() {
       whileInView={{ opacity: 1, y: 0 }} // fade in and move up
       transition={{ duration: 1, ease: "easeOut" }}
       viewport={{ once: false, amount: 0.2 }}
-       className="my-16 flex w-full border-b-2 border-gray-200 text-foreground">
+       className="my-16 flex w-full border-b-2 border-foreground-200 text-foreground">
         <div className="flex-1 my-auto pb-8">
           <div className="flex max-w-3xl flex-col px-6 lg:ml-auto lg:px-20">
             <h2 className="font-serif text-3xl leading-tight lg:text-6xl">
@@ -57,7 +57,7 @@ function HowItWorks() {
       whileInView={{ opacity: 1, y: 0 }} // fade in and move up
       transition={{ duration: 1, ease: "easeOut" }}
       viewport={{ once: false, amount: 0.2 }}
-       className="my-16 flex w-full border-b-2 border-gray-200 text-foreground">
+       className="my-16 flex w-full border-b-2 border-foreground-200 text-foreground">
         <div className="hidden flex-1 lg:block lg:pl-6">
           <div className="relative aspect-auto min-h-[720px]">
             <img

@@ -28,10 +28,10 @@ function HeroSection() {
           <h1 className="text-4xl sm:text-5xl font-bold leading-tight">
             Mockbuddy <br /> "Ace Your Next Interview — Book Mock Sessions Tailored for You"
           </h1>
-          <p className="text-lg text-gray-200 max-w-md">
+          <p className="text-lg text-foreground-200 max-w-md">
             "Choose from real-world interview simulations, get feedback, and prepare to impress. Your interview success starts here."
           </p>
-          <Button className="bg-primary text-white h-12 w-40  transition-all px-6 py-3 text-lg font-semibold rounded-">
+          <Button className="bg-primary text-background h-12 w-40  transition-all px-6 py-3 text-lg font-semibold rounded-">
             <NavLink to='/signup'>
             Get Started
             </NavLink>
@@ -39,7 +39,7 @@ function HeroSection() {
         </div>
       </div>
 
-      {/* Decorative white bubbles at bottom */}
+      {/* Decorative foreground bubbles at bottom */}
    
     </motion.section>
   );

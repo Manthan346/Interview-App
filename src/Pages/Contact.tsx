@@ -23,11 +23,11 @@ function Contact() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
                 <Label htmlFor="firstName">First name</Label>
-                <Input id="firstName" placeholder="First name" />
+                <Input id="firstName" placeholder="John" />
               </div>
               <div>
                 <Label htmlFor="lastName">Last name</Label>
-                <Input id="lastName" placeholder="Last name" />
+                <Input id="lastName" placeholder="Doe" />
               </div>
             </div>
 

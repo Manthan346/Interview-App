@@ -20,9 +20,7 @@ export function SignupForm({ className, ...props }: React.ComponentProps<"form">
         <Field>
           <FieldLabel htmlFor="email">Email</FieldLabel>
           <Input id="email" type="email" placeholder="m@example.com" required />
-          <FieldDescription>
-            We&apos;ll use this to contact you. We will not share your email with anyone else.
-          </FieldDescription>
+         
         </Field>
         <Field>
           <FieldLabel htmlFor="password">Password</FieldLabel>
@@ -64,8 +62,8 @@ export function SignupForm({ className, ...props }: React.ComponentProps<"form">
             <Button variant="outline" type="button" title="Sign up with LinkedIn">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="size-5">
                 <path
-                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.475-2.236-1.986-2.236-1.081 0-1.722.722-2.004 1.418-.103.249-.129.597-.129.946v5.441h-3.554s.05-8.736 0-9.646h3.554v1.348c-.009.009-.021.018-.033.027h.033v-.027c.418-.645 1.162-1.571 2.828-1.571 2.065 0 3.613 1.347 3.613 4.253v5.616zM5.337 8.855c-1.144 0-1.915-.762-1.915-1.715 0-.955.77-1.715 1.916-1.715.99 0 1.914.76 1.914 1.715 0 .953-.925 1.715-1.914 1.715zm1.575 11.597H3.762V9.506h3.15v10.946zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"
-                  fill="currentColor"
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.475-2.236-1.986-2.236-1.081 0-1.722.722-2.004 1.418-.103.249-.129.597-.129.946v5.441h-3.554s.05-8.824 0-9.744h3.554v1.378c-.009.015-.021.029-.03.042h.03v-.042c.43-.664 1.195-1.612 2.905-1.612 2.12 0 3.714 1.383 3.714 4.356v5.622zM5.337 8.855c-1.144 0-1.915-.762-1.915-1.715 0-.953.77-1.715 1.958-1.715 1.187 0 1.927.762 1.927 1.715 0 .953-.74 1.715-1.97 1.715zm1.946 11.597H3.392V9.563h3.891v10.889zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"
+                  fill="#0A66C2"
                 />
               </svg>
             </Button>
@@ -73,7 +71,7 @@ export function SignupForm({ className, ...props }: React.ComponentProps<"form">
         </Field>
         <Field>
           <FieldDescription className="px-6 text-center">
-            Already have an account? <NavLink to='/login'>Login in</NavLink>
+            Already have an account? <NavLink to='/login'>Login </NavLink>
           </FieldDescription>
         </Field>
       </FieldGroup>
