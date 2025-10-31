@@ -9,6 +9,8 @@ import Signup from './Pages/Signup'
 import FAQ from './components/FAQ'
 import Contact from './Pages/Contact'
 import Footer from './components/Footer'
+import BookSession from './Pages/BookSession'
+import Summary from './Pages/Summary'
 
 function App() {
  
@@ -22,6 +24,8 @@ function App() {
         <Route path='/login' element={<Login />} />
         <Route path='/signup' element={<Signup />} />
         <Route path='/faq' element={<FAQ />}></Route>
+        <Route path='/booking' element={<BookSession />} />
+        <Route path='/summary' element={<Summary />} />
         <Route path='/contact' element={<Contact />} />
 
       </Routes>
