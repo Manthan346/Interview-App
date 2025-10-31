@@ -105,6 +105,17 @@ function Navbar() {
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="flex flex-col gap-4 p-6">
+              <NavLink
+                to="/"
+                onClick={() => setIsOpen(false)}
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-primary font-semibold"
+                    : "text-foreground/80 font-sans hover:text-foreground transition-colors"
+                }
+              >
+                Home
+              </NavLink>
               <a
                 href="#faq"
                 onClick={(e) => {
@@ -115,6 +126,7 @@ function Navbar() {
               >
                 FAQ
               </a>
+               
               <NavLink
                 to="/login"
                 onClick={() => setIsOpen(false)}
